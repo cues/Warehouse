@@ -6,7 +6,7 @@ $(function(){
         success:function(data){
             console.log(data)
           for(i = 0; i < data.hits.length; i++){
-            $('.component-container').append(component(data, i));
+            $('.component-container').append(component(data.hits[i]));
           }
         }
     });
@@ -43,14 +43,14 @@ $(function(){
 })
 
 
-function component(data, i){
-    if(data.hits[i].image){
+function component(product){
+    if(product.image){
         return `
-            <div class='component display-flex' id='item${i}'>
-              <a href='${data.hits[i].link}'>
-                <div class='component-image'><img  src='${data.hits[i].image.link}'/></div>
-                <div class='component-name display-flex'>${data.hits[i].product_name}</div>
-                <div class='component-price display-flex'>$ ${data.hits[i].price}</div>
+            <div class='component display-flex' id='${product.product_id}'>
+              <a href='${product.link}'>
+                <div class='component-image'><img  src='${product.image.link}'/></div>
+                <div class='component-name display-flex'>${product.product_name}</div>
+                <div class='component-price display-flex'>$ ${product.price}</div>
              </a>
             </div>
             `
