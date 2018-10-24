@@ -9,3 +9,17 @@ In this excercise we would like you to build a web component similar to this [sc
 Please fork this repository and commit your changes for review.
 
 Amend this Readme in your forked repo and use your commits to outline the component you have created and the decisions that you have made.
+
+
+Hi,
+
+i've fetched the data using the json provided, this i did by creating a json on www.myjson.com 
+
+The link for the same is :
+    https://api.myjson.com/bins/12syuc
+
+All this was done by making an ajax call to the api on top. Once the data was fetched i ran a for loop by using data.count
+
+For each data that was fetched a component was created to insert the items from the api. 
+
+Also i too care by making the app responsive enough to view on all screens.
