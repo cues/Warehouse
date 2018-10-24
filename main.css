@@ -1,0 +1,131 @@
+body{
+    margin:0;
+    padding:0;
+    background: rgba(235,235,235,1);
+    font-family: 'Bitter'
+}
+a{
+    text-decoration: none;
+}
+.display-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transition-3{
+    -webkit-transition: all .3s ease-in-out;
+       -moz-transition: all .3s ease-in-out;
+         -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+}
+
+
+
+
+
+
+/* header */
+
+.header{
+    top:0;
+    height:70px;
+    width:100%;
+    background: rgba(255,255,255,.8);
+    box-shadow: 0 0 2px 0 rgba(23,23,23,.6);
+    position: fixed;
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    color:rgba(23,23,23,.8);
+    text-shadow: 0 0 1px rgba(23,23,23,.5)
+}
+.header-hide {
+    top:-80px
+}
+@media(max-width:600px){
+    .header{
+        height:50px;
+        font-size: 16px;
+        letter-spacing: 1.2px;
+    }
+    .header-hide {
+        top:-60px
+    }
+}
+
+
+
+
+/* Components */
+
+.component-container
+{
+    height:auto;
+    width: 100vw;
+    padding: auto 20px;
+    /* box-sizing: border-box; */
+    flex-wrap: wrap;
+    margin: 70px 0 40px;
+}
+.component{
+    height:300px;
+    width: 300px;
+    flex-direction: column;
+    margin: 30px 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.component-image
+{
+    width: 300px;
+    height: 250px;
+    background: rgba(255,255,255,1);
+    box-shadow: 0 0 2px 0 rgba(23,23,23,.6);
+    border-radius: 5px;
+    padding: 15px 0;
+}
+.component-image img
+{
+    height:auto;
+    max-height: 150px;
+    width: auto;
+    max-width:300px;
+
+}
+.component-name,
+.component-price
+{
+    font-size: 13px;
+    color:rgba(0,0,0,.7);
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin: 20px 0;
+    height:30px;
+    width:100%;
+    /* justify-content: flex-start; */
+    text-align: center;
+    /* text-transform: lowercase */
+}
+.component-price
+{
+    font-size: 18px;
+    margin: 0;
+    height:auto;
+    font-weight: bold
+}
+
+
+.footer{
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    background: rgba(255,255,255,.8);
+    box-shadow: 0 0 2px 0 rgba(23,23,23,.6);
+    font-size: 15px;
+    letter-spacing: 1px
+}
+.footer-hide{
+    bottom: -50px
+}
