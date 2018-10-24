@@ -46,7 +46,7 @@ $(function(){
 function component(data, i){
     if(data.hits[i].image){
         return `
-            <div class='component display-flex'>
+            <div class='component display-flex' id='item`+i+`'>
               <a href='`+data.hits[i].link+`'>
                 <div class='component-image'><img  src='`+data.hits[i].image.link+`'/></div>
                 <div class='component-name display-flex'>`+data.hits[i].product_name+`</div>
