@@ -11,7 +11,12 @@ Please fork this repository and commit your changes for review.
 Amend this Readme in your forked repo and use your commits to outline the component you have created and the decisions that you have made.
 
 
+
+
+
 Hi,
+
+You can view the app on  --->  https://warehouse1707.herokuapp.com/
 
 i've fetched the data using the json provided, this i did by creating a json on www.myjson.com 
 
