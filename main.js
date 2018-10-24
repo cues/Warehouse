@@ -5,7 +5,7 @@ $(function(){
         dataType: 'json',
         success:function(data){
             console.log(data)
-          for(i = 0; i < data.count; i++){
+          for(i = 0; i < data.hits.length; i++){
             $('.component-container').append(component(data, i));
           }
         }
@@ -46,11 +46,11 @@ $(function(){
 function component(data, i){
     if(data.hits[i].image){
         return `
-            <div class='component display-flex' id='item`+i+`'>
-              <a href='`+data.hits[i].link+`'>
-                <div class='component-image'><img  src='`+data.hits[i].image.link+`'/></div>
-                <div class='component-name display-flex'>`+data.hits[i].product_name+`</div>
-                <div class='component-price display-flex'>$ `+data.hits[i].price+`</div>
+            <div class='component display-flex' id='item${i}'>
+              <a href='${data.hits[i].link}'>
+                <div class='component-image'><img  src='${data.hits[i].image.link}'/></div>
+                <div class='component-name display-flex'>${data.hits[i].product_name}</div>
+                <div class='component-price display-flex'>$ ${data.hits[i].price}</div>
              </a>
             </div>
             `
