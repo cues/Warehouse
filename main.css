@@ -36,7 +36,8 @@ a{
     font-size: 19px;
     letter-spacing: 1.5px;
     color:rgba(23,23,23,.8);
-    text-shadow: 0 0 1px rgba(23,23,23,.5)
+    text-shadow: 0 0 1px rgba(23,23,23,.5);
+    cursor: default
 }
 .header-hide {
     top:-80px
@@ -124,7 +125,8 @@ a{
     background: rgba(255,255,255,.8);
     box-shadow: 0 0 2px 0 rgba(23,23,23,.6);
     font-size: 15px;
-    letter-spacing: 1px
+    letter-spacing: 1px;
+    cursor: default
 }
 .footer-hide{
     bottom: -50px
