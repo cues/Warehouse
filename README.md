@@ -28,3 +28,5 @@ All this was done by making an ajax call to the api on top. Once the data was fe
 For each data that was fetched a component was created to insert the items from the api. 
 
 Also i too care by making the app responsive enough to view on all screens.
+
+I've created an index.php file so that i could host it on Heroku
