@@ -1,5 +1,5 @@
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^tidngz.com [NC]
 RewriteRule ^(.*)$ http://www.tidngz.com/$1 [L,R=301,NC]
-#RewriteCond %{SERVER_PORT} 80
-#RewriteRule ^(.*)$ https://www.tidngz.com/$1 [R,L]
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
