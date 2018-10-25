@@ -23,7 +23,7 @@ i've fetched the data using the json provided, this i did by creating a json on 
 The link for the same is :
     https://api.myjson.com/bins/12syuc
 
-All this was done by making an ajax call to the api on top. Once the data was fetched i ran a for loop by using data.count
+All this was done by making an ajax call to the api on top. Once the data was fetched i ran a for loop by using data.hits.length
 
 For each data that was fetched a component was created to insert the items from the api. 
 
